@@ -3,7 +3,6 @@ import { Text, StyleSheet, Dimensions, TouchableOpacity } from 'react-native'
 const screen = Dimensions.get('window')
 const buttonWidth = screen.width / 5
 
-// Added id for easier identification 
 interface Props {
   text: string
   onPress: () => void
@@ -21,7 +20,6 @@ export default function button({
   onPress,
 }: Props) {
   
-  //Used teneray operator for the style change.
   const buttonStyle = isOrange
     ? styles.buttonOrange
     : isGray
